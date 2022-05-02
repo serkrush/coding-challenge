@@ -1,9 +1,4 @@
 import React, {useState, useEffect} from "react";
-import Countries from "../components/CountriesList"
-import {useActions} from "../hooks/useActions";
-import {useTypedSelector} from "../hooks/useTypedSelector";
-import { REGIONS } from "../utils/consts";
-
 import TextField from '@mui/material/TextField';
 import SearchIcon from '@mui/icons-material/Search';
 import InputAdornment from "@material-ui/core/InputAdornment";
@@ -14,6 +9,11 @@ import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 import Container from '@mui/material/Container';
 import { withStyles } from "@material-ui/core/styles";
+
+import Countries from "../components/CountriesList"
+import {useActions} from "../hooks/useActions";
+import {useTypedSelector} from "../hooks/useTypedSelector";
+import { REGIONS } from "../utils/consts";
 
 const MenuItem = withStyles({
   root: {

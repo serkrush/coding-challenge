@@ -1,6 +1,7 @@
-import {CountriesAction, CountriesActionTypes} from "../../types/countries";
 import {Dispatch} from "redux";
 import axios from "axios";
+
+import {CountriesAction, CountriesActionTypes} from "../../types/countries";
 
 export const fetchCountries = () => {
     return _fetchCountriesAll()

@@ -2,12 +2,12 @@ import React from 'react';
 import Button from '@mui/material/Button';
 import Stack from '@mui/material/Stack';
 import { useNavigate } from "react-router-dom";
+
 import { CODE_ROUTE } from "../utils/consts";
 
 interface BorderCountriesProps {
   countries: any[];
 }
-
 
 const BorderCountries = (props: BorderCountriesProps) => {
   const navigate = useNavigate();

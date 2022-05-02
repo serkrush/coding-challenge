@@ -1,26 +1,11 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { Pagination } from "@material-ui/lab";
+import Grid from '@mui/material/Grid';
+import Box from '@mui/material/Box';
+import Typography from '@mui/material/Typography';
+
 import usePagination from "../Pagination";
 import CountryItem from "./CountryItem";
-
-
-
-import AppBar from '@mui/material/AppBar';
-import Button from '@mui/material/Button';
-import CameraIcon from '@mui/icons-material/PhotoCamera';
-import Card from '@mui/material/Card';
-import CardActions from '@mui/material/CardActions';
-import CardContent from '@mui/material/CardContent';
-import CardMedia from '@mui/material/CardMedia';
-import CssBaseline from '@mui/material/CssBaseline';
-import Grid from '@mui/material/Grid';
-import Stack from '@mui/material/Stack';
-import Box from '@mui/material/Box';
-import Toolbar from '@mui/material/Toolbar';
-import Typography from '@mui/material/Typography';
-import Container from '@mui/material/Container';
-import Link from '@mui/material/Link';
-
 
 interface CountriesProps {
   countCountries: number;
@@ -37,7 +22,6 @@ const Countries = (props: CountriesProps) => {
   const count = countries && countries.length > 0 && Math.ceil(countries.length / countCountries);
   const _DATA = usePagination(countries, countCountries);
   
-
   const handleChange = (e: any, p: any) => {
     setPage(p);
     _DATA.jump(p);
@@ -85,7 +69,6 @@ const Countries = (props: CountriesProps) => {
           onChange={handleChange}
           style={{
             marginTop: 20,
-            // justifyContent: "flex-end",
             marginLeft: "auto",
             marginRight: "auto",
           }}

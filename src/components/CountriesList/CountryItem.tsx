@@ -1,27 +1,19 @@
-import React, { useState } from "react";
+import React from "react";
 
-import AppBar from '@mui/material/AppBar';
-import Button from '@mui/material/Button';
-import CameraIcon from '@mui/icons-material/PhotoCamera';
 import Card from '@mui/material/Card';
-import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import { CardActionArea } from '@mui/material';
-import CssBaseline from '@mui/material/CssBaseline';
 import Grid from '@mui/material/Grid';
-import Stack from '@mui/material/Stack';
 import Box from '@mui/material/Box';
-import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
-import Container from '@mui/material/Container';
 import { useNavigate } from "react-router-dom";
+
 import { COUNTRY_ROUTE } from "../../utils/consts";
 
 interface CountryItemProps {
   data: any;
 }
-
 
 const CountryItem = (props: CountryItemProps) => {
   const {data} = props

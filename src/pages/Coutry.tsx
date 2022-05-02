@@ -1,19 +1,19 @@
 import React, { useEffect } from "react";
-import {useActions} from "../hooks/useActions";
 import { useParams } from "react-router-dom";
-import {useTypedSelector} from "../hooks/useTypedSelector";
 import CardMedia from '@mui/material/CardMedia';
 import Container from '@mui/material/Container';
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
-import NativeName from "../components/NativeName";
-import Languages from "../components/Languages";
-import BorderCountries from "../components/BorderCountries";
 import Button from '@mui/material/Button';
 import { useNavigate } from "react-router-dom";
 import ArrowBack from '@mui/icons-material/ArrowBack';
-import { BorderColor } from "@mui/icons-material";
+
+import {useActions} from "../hooks/useActions";
+import {useTypedSelector} from "../hooks/useTypedSelector";
+import NativeName from "../components/NativeName";
+import Languages from "../components/Languages";
+import BorderCountries from "../components/BorderCountries";
 
 const Coutry = () => {
   const {fetchCountry} = useActions()
@@ -103,9 +103,6 @@ const Coutry = () => {
                 </Grid>
               </Grid>
 
-
-
-
               <Grid item mt={7}>
                 <Typography gutterBottom mt={2}>
                   <Box sx={{ display: 'inline', fontWeight: 'bold' }} fontWeight="fontWeightMedium">Border Countries:</Box>
@@ -115,8 +112,6 @@ const Coutry = () => {
                 </Typography>
               </Grid>
             </Grid>
-
-              
             
           </Grid>
         </Box>

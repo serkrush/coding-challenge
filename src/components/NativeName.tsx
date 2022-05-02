@@ -5,7 +5,6 @@ interface NativeNameProps {
   names: any;
 }
 
-
 const NativeName = (props: NativeNameProps) => {
   return (
     <Box sx={{ display: 'inline' }}>

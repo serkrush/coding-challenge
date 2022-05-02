@@ -5,7 +5,6 @@ interface LanguagesProps {
   languages: any;
 }
 
-
 const Languages = (props: LanguagesProps) => {
   return (
     <Box sx={{ display: 'inline' }}>
